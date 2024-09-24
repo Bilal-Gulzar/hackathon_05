@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Resume Builder</h1>
+
+  <!-- Form for user to fill in their information -->
+  <div id="form-container">
+    <form id="resume-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" name="skills" required />
+
+      <button type="submit">Generate Resume</button>
+    </form>
+  </div>
+
+  <!-- Section to display generated resume -->
+  <div id="resume-container" style="display: none;">
+    <h2>Resume</h2>
+    <div id="resume-content">
+      <p><strong>Name:</strong> <span id="resume-name"></span></p>
+      <p><strong>Email:</strong> <span id="resume-email"></span></p>
+      <p><strong>Phone:</strong> <span id="resume-phone"></span></p>
+      <p><strong>Skills:</strong> <span id="resume-skills"></span></p>
+    </div>
+    <button id="share-link-btn">Share Resume Link</button>
+    <button id="download-pdf-btn">Download as PDF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
